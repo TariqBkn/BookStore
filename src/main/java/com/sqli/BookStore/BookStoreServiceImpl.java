@@ -31,6 +31,7 @@ public class BookStoreServiceImpl implements BookStoreService {
     public boolean confirmOrder(int bookCopyId, int customerId) {
                 store.removeCopy(bookCopyId);
         return store.confirmOrder(bookCopyId,customerId);
+
     }
 
     @Override
@@ -53,3 +54,4 @@ public class BookStoreServiceImpl implements BookStoreService {
         return store.isAvailable(copy);
     }
 }
+
